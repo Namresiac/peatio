@@ -1,0 +1,3158 @@
+fr:
+  activerecord:
+    models:
+      api_tokens: API Token
+      trade: Trades
+      order: Commandes
+      order_bid: OFFRE
+      order_ask: DEMANDE
+      withdraw: Retirer
+      deposit: Dépôt
+      payment_transaction: Paiement
+      statistic/orders_grid: Stat Commandes
+      statistic/trades_grid: Stat Trades
+      statistic/members_grid: Stat Membres
+      statistic/deposits_grid: Stat DepÃts
+      statistic/withdraws_grid: Stat Retraits
+      admin/deposits_grid: Dépôts
+      admin/withdraws_grid: Retraits
+      deposits/bank: Dépôts/banque
+      withdraws/bank: Retraits/banque
+      withdraws/satoshi: Retrait
+      withdraws/ripple: Retrait
+    attributes:
+      api_token:
+        access_key: Clé d'accès
+        trusted_ip_list: IP liste blanche
+        ip_whitelist: IP liste blanche
+        label: Label
+        actions: Actions
+      fund_source:
+        address: Adresse
+        category: Catégorie
+        label: Label
+      account:
+        currency: Monnaie
+        balance_and_locked: Balance / Verrouillé
+        balance: Balance
+        locked: Gelé
+      deposit:
+        state: Statut
+        tx_id: TxID
+        member_id: Membre ID
+        created_at: Créé le
+        address: Adresse
+        amount: Montant
+        done_at: Terminé le
+        sn: SN
+      withdraw:
+        id: ID
+        sn: SN
+        withdraw_id: ID
+        created_at: Créé le
+        done_at: Terminé a
+        sum: Somme
+        fee: Commissions
+        currency: Monnaie
+        amount: Montant
+        address: Adresse
+        state: Statut
+        state_text: Statut
+        tx_id: TxID
+        fund_source_id: Adresse de retrait
+        detail: Detail
+      account_version:
+        id: ID
+        locked: GelÃ©
+        amount: Montant
+        balance: Balance
+        reason: Raison
+        reason_text: Raison
+        modifiable_id: LINK ID
+        modifiable_type: LINK
+        created_at: Créé le
+        in: Entrant
+        out: Sortant
+        fee: Commission
+      trade:
+        bid: Offre
+        ask: Demande
+        fee: Commission
+        price: Prix
+        volume: Volume
+        category: Offre/Demande
+        order: Commande
+      order:
+        bid: Offre
+        ask: Demande
+        price: Prix
+        total: Total
+        volume: Volume
+        origin_volume: Volume
+        sum: Somme
+        category: Offre/Demande
+        kind: Genre
+        at: Le
+        id: ID
+        state: Etat
+        operation: Opération
+      payment_transaction:
+        at: Le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmations
+        state: Etat
+        state_done: Terminé
+        state_wait: en attente
+      member:
+        id: ID
+        name: Nom
+        created_at: Enregistré le
+        sn: SN
+      withdraws/bank:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_source: Banque
+        fund_extra: Banque
+        fund_extra_text: Banque
+        fund_uid: Compte bancaire
+        sum: Montant
+        fee: Commissions
+        amount: Montant
+        remark: Remarque
+        created_at: Créé le
+      deposits/bank:
+        created_at: Créé le
+        holder: Titulaire
+        fund_extra: Compte
+        fund_uid: Compte d'envois
+        member_sn: Membre SN
+        amount: Montant
+        sn: SN
+        state_and_action: Etat/Action
+        label: Label
+        fund_source: Provenance
+      deposits/satoshi:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmations
+        aasm_state_text: Etat
+      deposits/bitcoin_cash:
+        created_at: Créé le 
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmations
+        aasm_state_text: Etat
+      deposits/litoshi:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmations
+        aasm_state_text: Etat
+      deposits/ripple:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmations
+        aasm_state_text: Etat
+      deposits/duff:
+        created_at: Créé le
+        txid: ID de transaction
+        amount: Montant
+        confirmations: Confirmations
+        aasm_state_text: Etat
+      deposits/ethereum:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmations
+        aasm_state_text: Etat
+      withdraws/satoshi:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text: Label
+        fund_extrat: Label
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commissions
+      withdraws/bitcoin_cash:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text: Label
+        fund_extrat: Label
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commissions
+      withdraws/litoshi:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text: Label
+        fund_extrat: Label
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commission
+      withdraws/ripple:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text: Label
+        fund_extrat: Label
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commissions
+      withdraws/duff:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text: Label
+        fund_extrat: Label
+        fund_source: Banque
+        fund_uid: Montant
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commission
+      withdraws/ethereum:
+        id: ID
+        member_name: Compte
+        state_and_actions: Etat/Action
+        fund_extra_text: Label
+        fund_extrat: Label
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commission
+    errors:
+      models:
+        order_bid:
+          attributes:
+            sum:
+              expensive: Expensive Account
+            price:
+              range: Invalid Price Range
+        order_ask:
+          attributes:
+            origin_volume:
+              expensive: Expensive Account
+            price:
+              range: Invalid Price Range
+        account:
+          attributes:
+            balance:
+              less: Blance Less
+        fund_source:
+          attributes:
+            address:
+              satoshi_ismine: Adresse utilisée
+              satoshi_invalid: Adresse invalide
+              bitcoin_cash_ismine: Adresse utilisée
+              bitcoin_cash_invalid: Adresse invalide
+              litoshi_ismine: Adresse utilisée
+              litoshi_invalid: Adresse invalide
+              ripple_ismine: Adresse utilisée
+              ripple_invalid: Adresse invalide
+              duff_ismine: Adresse utilisée
+              duff_invalid: Adresse invalide
+              ethereum_ismine: Adresse utilisée
+              ethereum_invalid: Adresse invalide
+        withdraw:
+          account_balance_is_poor: L'approvisionnement du compte est insuffisant
+          attributes:
+            password:
+              match: invalide
+            amount:
+              poor: insuffisant
+              bank_min: Moins de 5000.00
+        withdraws/satoshi:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait
+              invalid: Adresse non valide, merci de vérifier
+              ismine: Merci d'utiliser une autre adresse
+        withdraws/bitcoin_cash:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait
+              invalid: Adresse non valide, merci de vérifier
+              ismine: Merci d'utiliser une autre adresse
+        withdraws/litoshi:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait
+              invalid: Adresse non valide, merci de vérifier
+              ismine: Merci d'utiliser une autre adresse
+        withdraws/ripple:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait
+              invalid: Adresse non valide, merci de vérifier
+              ismine: Merci d'utiliser une autre adresse
+        withdraws/duff:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait
+              invalid: Adresse non valide, merci de vérifier
+              ismine: Merci d'utiliser une autre adresse
+        withdraws/ethereum:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait
+              invalid: Adresse non valide, merci de vérifier
+              ismine: Merci d'utiliser une autre adresse
+        application:
+          attributes:
+            redirect_uri:
+              fragment_present: Ne peut_être partiel
+              invalid_uri: L'URI doit être valide
+              relative_uri: L'URI doit être absolue.
+      messages:
+        undef: raison inconnue
+        less: balance less
+        verify: Erreur de vérification
+        orders:
+          price: Limite de prix  %{l} ~ %{h}
+          sum: Somme limite %{l} ~ %{h}
+          precision: Precision de %{p}
+  datagrid:
+    empty: Aucune donnée trouvée
+    filters:
+      date:
+        range_separator: " de "
+      datetime:
+        range_separator: " de "
+    form:
+      submit: Rechercher
+    admin_deposits_grid:
+      columns:
+        sn: SN
+        created_at: Créé le
+        fund_extra_text: Extra
+        fund_uid: UID
+        txid: TXID
+        amount: Montant
+        fee: Commission
+        aasm_state_text: Etat
+    bank_deposits_grid:
+      columns:
+        sn: SN
+        created_at: Créé le
+        fund_extra_text: Extra
+        fund_uid: UID
+        txid: TXID
+        amount: Montant
+        fee: Commission
+        aasm_state_text: Etat
+    coin_deposits_grid:
+      columns:
+        sn: SN
+        txid: ID de Transaction
+        created_at: Créé le
+        amount: Montant
+        aasm_state_text: Etat
+        confirmations: Confirmations
+    withdraws_grid:
+      columns:
+        sn: SN
+        name: Nom
+        amount: Montant
+        fee: Commissions
+        created_at: Créé le
+        done_at: Complété le
+        state_text: Etat
+    members_grid:
+      columns:
+        sn: Numéro de série
+        created_at: Créé le
+        actions: Actions
+    account_versions_grid:
+      columns:
+        created_at: Créé le
+        balance: Balance
+        in: Entrant
+        out: Sortant
+        amount: Montant
+        reason_text: Raison
+        modifiable_type: Lien
+        fee: Commission
+      filters:
+        reason: Raison
+        currency: Monnaie
+    statistic_members_grid:
+      columns:
+        sn: Numéro de série
+        id: ID
+        email: Email
+        created_at: Créé le
+        detail: Details
+        action: Action
+      filters:
+        sn: Numéro de série
+        created_at: Créé le
+    statistic_orders_grid:
+      columns:
+        id: Numéro de série
+        price: Prix
+        volume: Volume
+        created_at: Créé le
+        state_text: Etat
+        member_id: Membre
+      filters:
+        state: Etat
+        currency: Monnaie
+        created_at: Créé le
+        type: Demande/offre
+    statistic_trades_grid:
+      columns:
+        id: ID
+        price: Prix
+        volume: Volume
+        strike_amount: Montant
+        created_at: Créé le
+      filters:
+        currency: Monnaie
+        created_at: Créé le
+    statistic_deposits_grid:
+      columns:
+        member: Membre
+        tx_id: TxID
+        amount: Montant
+        currency: Monnaie
+        created_at: Créé le
+        state_text: Etat
+      filters:
+        currency: Monnaie
+        state: Etat
+        created_at: Créé le
+    statistic_withdraws_grid:
+      columns:
+        member: Membre
+        address: Adresse
+        amount: Montant
+        currency: Monnaie
+        created_at: Créé le
+        state_text: Etat
+      filters:
+        state: Etat
+        created_at: Créé le
+  deposit_channel:
+    bank:
+      key: Transfère bancaire
+      title: Trasnfère bancaire
+      intro: Dépôts bancaire, pour les dépôts importants
+      latency: 10 minutes
+      transfer: Manuel
+      go: Dépôt
+    satoshi:
+      key: Block Chain
+      title: Dépôt de Bitcoins
+      intro: Dépôt de Bitcoins depuis votre propre adresse vers Peatio
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Déposer
+    bitcoin_cash:
+      key: Block Chain
+      title: Dépôt de Bitcoins-Cash
+      intro: Dépôt de Bitcoins-Cash depuis votre propre adresse vers Peatio
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Déposer
+    litoshi:
+      key: Block Chain
+      title: Dépôt de Litecoins
+      intro: Dépôt de Litecoins depuis votre propre adresse vers Peatio
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Déposer
+    ripple:
+      key: Block Chain
+      title: Dépôt de Ripple
+      intro: Dépôt de Ripple depuis votre propre adresse vers Peatio
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Déposer
+    duff:
+      key: Block Chain
+      title: Dépôt de Bitcoins
+      intro: Dépôt de Bitcoins depuis votre propre adresse vers Peatio
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Déposer
+    ethereum:
+      key: Block Chain
+      title: Dépôt de Bitcoins
+      intro: Dépôt de Bitcoins depuis votre propre adresse vers Peatio
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Déposer
+  deposits/bank:
+    aasm_state:
+      submitting: En cours
+      cancelled: Annulé
+      submitted: Soumis
+      accepted: Accepté
+      rejected: Rejeté
+      checked: Vérifié
+      warning: Attention
+  private:
+    deposits:
+      banks:
+        destroy:
+          notice: La demande de révocation a réussi avec succès.
+        create:
+          notice: La demande de recharge a bien été prise en compte. Veuillez utiliser les informations ci-dessous afin de compléter le transfert bancaire
+          submit: Soumettre
+        new:
+          fund_source: Séléctionner la provenance
+          manage_fund_source: Gérer la provenance
+          submit: Soumettre
+        edit:
+          bank: Nom du bénéficiaire
+          branch: Branche du bénéficiaire
+          hodler: Titulaire
+          account: Compte du bénéficiaire
+    history:
+      transaction:
+        Deposit: Dépôt
+        Withdraw: Retrait
+      account:
+        currency: Monnaie
+        buy: Acheter
+        sell: Vendre
+        filter_by_type: Filtrer par types
+        account_history: Historique de compte
+        type: type
+        timestamp: Date et heure
+        fee: Commissions
+        currency: Monnaie
+        amount: Montant
+        txid: Txid
+      orders:
+        order_history: Historique des commandes
+        id: ID
+        type: Type
+        state: Etat
+        market: Marché
+        price: Prix
+        volume: Volume
+        average_price: Prix moyen
+        fullfilled_volume: Fullfilled
+        timestamp: Créé le
+      order:
+        ask: Vendre
+        bid: Acheter
+        wait: Attendre
+        cancel: Annuler
+        done: Terminé
+      trades:
+        trade_history: Historique de Trade
+        side: Side
+        created_at: Créé le
+        base_currency: Monnaie
+        base_amount: Montant
+        quote_currency: Quote Currency
+        quote_amount: Quote Amount
+        price: Prix
+      trade:
+        sell: Vendre
+        buy: Acheter
+    trade:
+      trades:
+        orders:
+          title: Commandes
+        trades:
+          title: Trades
+        charges:
+          title: Charges
+      orders:
+        index:
+          done: Terminé
+          cancel: Annuler
+          confirm: 'Etes-vous certains de vouloir annuler la commande #%{id}?'
+        destroy:
+          'true': "#%{id} Commande annulée"
+          'false': "#%{id} Annulation échouée"
+    withdraws:
+      update:
+        request_accepted: Demande de retrait acceptée.
+      destroy:
+        request_canceled: Demande de retrait annulée
+      index:
+        fee: Commissions
+        total: Total
+        withdraw_history: Historique des retraits
+      banks:
+        update:
+          notice: Le transfère bancaire a bien été pris en compte, nous tâchons de le traiter dans les plus brefs délais.
+        destroy:
+          notice: Le transfère bancaire a été annulé, le montant bloqué vous a été retourné
+        new:
+          fund_source: Séléctionner la provenance
+          manage_fund_source: Gérer les fonds
+          submit: Soumettre
+          allin: Tout
+        create:
+          notice: La demande de retrait a bien été prise en compte, veuilez utiliser les informations ci-dessous afin de compléter le transfère
+
+      satoshis:
+        destroy:
+          notice: Le transfère bancaire a été annulé, le montant bloqué vous a été retourné
+        update:
+          notice: Le transfère bancaire a bien été pris en compte, nous tâchons de le traiter dans les plus brefs délais.
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: La demande de retrait a bien été prise en compte, veuilez utiliser les informations ci-dessous afin de compléter le transfère
+      bitcoin_cash:
+        destroy:
+          notice: Le transfère bancaire a été annulé, le montant bloqué vous a été retourné
+        update:
+          notice: Le transfère bancaire a bien été pris en compte, nous tâchons de le traiter dans les plus brefs délais.
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: La demande de retrait a bien été prise en compte, veuilez utiliser les informations ci-dessous afin de compléter le transfère
+      litoshis:
+        destroy:
+          notice: Le transfère bancaire a été annulé, le montant bloqué vous a été retourné
+        update:
+          notice: Le transfère bancaire a bien été pris en compte, nous tâchons de le traiter dans les plus brefs délais.
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: La demande de retrait a bien été prise en compte, veuilez utiliser les informations ci-dessous afin de compléter le transfère
+      ripples:
+        destroy:
+          notice: Le transfère bancaire a été annulé, le montant bloqué vous a été retourné
+        update:
+          notice: Le transfère bancaire a bien été pris en compte, nous tâchons de le traiter dans les plus brefs délais.
+          alert_two_factor: Erreur du Two-Factor Authentication 
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: La demande de retrait a bien été prise en compte, veuilez utiliser les informations ci-dessous afin de compléter le transfère
+      duffs:
+        destroy:
+          notice: Le transfère bancaire a été annulé, le montant bloqué vous a été retourné
+        update:
+          notice: Le transfère bancaire a bien été pris en compte, nous tâchons de le traiter dans les plus brefs délais.
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: La demande de retrait a bien été prise en compte, veuilez utiliser les informations ci-dessous afin de compléter le transfère.
+      ethereums:
+        destroy:
+          notice: Le transfère bancaire a été annulé, le montant bloqué vous a été retourné
+        update:
+          notice: Le transfère bancaire a bien été pris en compte, nous tâchons de le traiter dans les plus brefs délais.
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: La demande de retrait a bien été prise en compte, veuilez utiliser les informations ci-dessous afin de compléter le transfère.
+    account_versions:
+      index:
+        description: Toutes les transactions / actions sur Peatio sont pexhasustivement documentées.
+    api_tokens:
+      user_tokens:
+        no_token: Vous n'avez pas d'API tokens
+        edit: Editer
+        destroy: Détruire
+        destroy-confirm: Etes-vous sur ?
+        create: Créer nouveau Token
+        http: HTTP API Document
+        websocket: Websocket API Document
+        more: 'Pour plus d'informations veuillez lire la documentation sur Github:'
+      unbind:
+        success: Révoqué avec succès
+        failed: Révocation échouée
+      new:
+        label_hint: Les labels vous aident a vous souvenenir. (optionnel)
+      create:
+        success: API token créé avec succès
+        failed: Echec de création d'API Tokens. Merci de réessayer plus tard, ou bien de contacter les administrateurs. 
+        desc: Veuillez copier/coller les clés ci-dessous dans un endroit sur. Ces clés ne vous seront plus jmais fournies.
+      edit:
+        access_key_hint: Créé le %{created_at}
+        label_hint: Les labels vous aident a vous souvenenir. (optionnel)
+        ip_whitelist_hint: Séparer les IP par des virgules, laisser blanc signifie que toutes les IP sont autorisées.
+      update:
+        success: Enregistré avec succès.
+        failed: Echec d'enregistrement. Merci de réessayer ultérieurement ou bien de contacter les administrateurs.
+      destroy:
+        success: Le Token a été détruit avec succès.
+        failed: Échec de destruction du Token.
+    assets:
+      index:
+        liability-proof: Preuves
+        coin-assets: '%{currency} porte-monnaie'
+        fiat-assets: '%{currency} porte-monnaie'
+      liability_tabs:
+        verify-coin: 'Vérifier mon porte-monnaie %{currency}'
+        verify-fiat: 'Vérifier mon porte-monnaie %{currency}'
+        coin-assets-total: 'Total %{currency} assets of exchange: '
+        fiat-assets-total: 'Total %{currency} assets of exchange: '
+      liability_proof:
+        title: Preuves
+        intro: Nos passifs se réfèrent à la somme d'argent
+          crypto monnaies et monnaies fiduciaires) que nos utilisateurs nous font confiance. Sur
+          cette page, nous vous présentons nos responsabilités. Nous vous fournissons également un moyen de vérifiez que le solde de votre compte fait effectivement partie de nos passifs.
+      liability_data:
+        liability-proof-generating: En cours, cela peut durer une trentaine de minutes.
+        root-json: Root node
+        partial-tree: 'My %{currency} Assets: '
+        get-partial-tree: Obtenir mon arbre partiel
+        timestamp: La preuve a été éditée le %{time}.
+        go-verify: Verifier
+      coin_assets:
+        title: '%{currency} porte-monnaie'
+        intro: "Tous les porte-monnaie %{currency} sont listés ici."
+        total: 'Total %{currency} porte-monnaie'
+        address: Adresse
+      fiat_assets:
+        title: '%{currency} porte-monnaie'
+        intro: "Tous les porte-monnaie %{currency} sont listés ici."
+        total: 'Total %{currency} porte-monnaie'
+      partial_tree:
+        success: 'Success! Verification data generated at: %{timestamp}'
+    markets:
+      show:
+        error: Echec
+        success: Succès
+        analysis_panel: Analyses
+        help_panel: Aide
+        done: Terminé
+        cancel: Annuler
+        cancel_confirm: Etes-vous certains de vouloir annuler la commande ?
+        confirm: CONFIRMER
+        ask_order: 'DEMANDE ##sn#'
+        bid_order: 'OFFRE ##sn#'
+        my_active_order: Actif
+        my_done_order: Terminé
+        trades: Trading
+        chat: Chat Channel
+      market_list:
+        all: Tous les Marchés
+        all_html: "<i class='fa fa-check'></i><span>Tous les Marchés</span>"
+        ccy_html: "<i class='fa fa-check'></i><span>%{currency} Marchés</span>"
+        price: Prix
+        change: "24h %"
+      range_switch:
+        switch_1: 1m
+        switch_5: 5m
+        switch_15: 15m
+        switch_30: 30m
+        switch_60: 1h
+        switch_120: 2h
+        switch_240: 4h
+        switch_360: 6h
+        switch_720: 12h
+        switch_1440: 1d
+        switch_4320: 3d
+        switch_10080: 1w
+      depths:
+        price: Prix
+        amount: Montant
+        buy: Acheter
+        sell: Vendre
+        ask_orders: Vendre
+        bid_orders: Acheter
+      ticker:
+        last: Dernier Prix
+        ask: DEMANDE
+        bid: OFFRE
+      account_balance:
+        title: Balance
+        available: Disponible %{currency}
+      bid_entry:
+        action: "Acheter %{currency}"
+        price: Prix
+        last_price: Dernier Prix
+        amount: Montant
+        total: Total
+      ask_entry:
+        action: "Vendre %{currency}"
+        price: Prix
+        last_price: Dernier Prix
+        amount: Montant
+        total: Total
+      place_order:
+        price_high: Élevé
+        price_low: Faible
+        full_bid: Plein
+        full_ask: Vide
+      order_book:
+        title: Cahier des commandes
+        volume: Volume
+        price: Prix
+        amount: Montant
+        ask: demande
+        bid: offre
+        fade_toggle_depth: Profondeur de Marché
+      trade_state:
+        new: Nouveau
+        partial: Partiel
+      market_trades:
+        all: Tout
+        my: Les miens
+        all_html: "<i class='fa fa-check'></i><span>Tout</span>"
+        my_html: "<i class='fa fa-check'></i><span>Les miens</span>"
+        time: Quand
+        price: Prix
+        volume: Volume
+      header:
+        network: Connexion
+        vol: 24h Volume
+        high: Elevé
+        low: Faible
+        change: Changer
+      settings:
+        sound: Sons
+        notification: Notifications
+        funds: "Fonds"
+        signout: "Déconnecter"
+        settings: "Profil"
+        history: "Historique"
+      account_summary:
+        title: Sommaire
+        account: Compte
+        amount: Montant
+        locked: Geler
+        view_all_accounts: "Tout voir"
+        hide_all_accounts: "Cacher le reste"
+      my_orders:
+        orders_wait: Derniéres commandes
+        orders_done: Commandes complétées
+        orders_cancel: Commandes annulées
+        no_open_orders: VOus n'avez pas de commandes en cours
+        clear_all_html: "<i class='fa fa-trash'></i><span>Tout annuler</span>"
+        clear_bids_html: "<i class='fa fa-trash'></i><span>Annuler offre</span>"
+        clear_asks_html: "<i class='fa fa-trash'></i><span>Annuler demande</span>"
+        confirm_clear_all: Etes-vous certains de vouloir annuler toutes le commandes?
+        confirm_clear_bids: Etes vous certains de vouloir annuler toutes les offres?
+        confirm_clear_asks: Ete-vous certains de vouloir annuler toutes les demandes?
+        price: Prix
+        volume: Volume
+        amount: Montant
+        time: Date
+      mask:
+        warning: <a class=text-up href='/'>S'inscrire</a> ou <a class=text-up
+          href='/'>Se connecter</a> for operation
+      klime_chart:
+        title: Candlestick Charts
+      global:
+        global_orders_title: COMMANDES
+        global_trades_title: TRADES
+      chat:
+        title: Chat Channel
+    settings:
+      success: Paramétres mis a jour.
+      failure: Mot de passe non valide, veuillez réessayer.
+      index:
+        reauthenticate: Authentication
+        auth-verified: Veuilelz d'abord confirmer votre identité.
+        api_tokens:
+          title: API Tokens
+          description: Créér et gérer vos API tokens.
+          go: Aller
+  guides:
+    private:
+      settings:
+        panel: Paramètres
+        index:
+          intro: Gérer votre profil.
+      api_tokens:
+        panel: API Tokens
+        index:
+          title: Mes Tokens
+          intro: LIste de tout vos API Tokens. Une 'liste Blanche d'IP' signifit que vous autorisez toutes les adresses IP
+        new:
+          title: Créer API Token
+        create:
+          title: Crer API Token
+        edit:
+          title: Editer API Token
+        update:
+          title: Editer API Token
+    panels:
+      balance: Balance
+    sessions:
+      panel: Se connecter
+      new:
+        title: Se connecter
+        intro: Se connecter à Peatio.
+      failure:
+        title: Se connecter
+        intro: Se connecter à Peatio.
+  simple_form:
+    placeholders:
+      deposit:
+        bank:
+          amount: Montant minimum 100
+      session:
+        email: Adresse E-mail
+        password: Mot de passe
+      order_bid:
+        origin_volume: Acheter
+        sum: Somme
+      order_ask:
+        origin_volume: Vendre
+        sum: Total
+      withdraw:
+        bank:
+          sum: Montant minimum 100
+        satoshi:
+          sum: Montant minimum 0.001
+          fund_extra: Entrer un nom pour se rappeler plus facilement (optionnel)
+        ripple:
+          sum: Montant minimum 0.001
+          fund_extra: Entrer un nom pour se rappeler plus facilement (optionnel)
+    hints:
+      deposit:
+        bank:
+          sum: "<a target='_balance' href='#'>Commissions</a>"
+          sn: "<span class='text-danger'>Veuillez copier le code SN lors de votre transfère bancaire, sans cela nous ne pourrons traiter votre demande rapidement.</span>"
+      withdraw:
+        bank:
+          sum: "<a target='_balance' href='#'>Commission</a>"
+          fund_extra: Si votre banque n'est pas listée, merci de contacter le service-client.
+        satoshi:
+          sum: "<a target='_balance' href='#'>Commissions</a>"
+        bitcoin_cash:
+          sum: "<a target='_balance' href='#'>Commissions</a>"
+        litoshi:
+          sum: "<a target='_balance' href='#'>Commissions</a>"
+        ripple:
+          sum: "<a target='_balance' href='#'>Commissions</a>"
+        duff:
+          sum: "<a target='_balance' href='#'>Commissions</a>"
+    creating: Création...
+    updating: Mise a jour...
+    buttons:
+      or: Ou
+      cancel: Annuler
+    'yes': 'Oui'
+    'no': 'Non'
+    required:
+      text: requit
+      mark: "*"
+    error_notification:
+      default_message: 'Veuillez-vérifier :'
+    labels:
+      defaults:
+        title: Titre
+      fund_source:
+        label: Label
+        address: Adresse
+        category: Categorie
+      withdraw:
+        bank:
+          fund_extra: Banque
+          sum: Somme
+          account_balance: Balance
+        satoshi:
+          fee: Commissions
+          sum: Somme
+          fund_uid: Adresse Bitcoin
+          fund_extra: Label
+          account_balance: Balance
+        bitcoin_cash:
+          fee: Commissions
+          sum: Somme
+          fund_uid: Adresse Bitcoin-Cash
+          fund_extra: Label
+          account_balance: Balance
+        litoshi:
+          fee: Commissions
+          sum: Somme
+          fund_uid: Adresse Litecoin
+          fund_extra: Label
+          account_balance: Balance
+        ripple:
+          fee: Commissions
+          sum: Somme
+          fund_uid: Adresse Ripple
+          fund_extra: Label
+          account_balance: Balance
+        duff:
+          fee: Commissions
+          sum: Somme
+          fund_uid: Adresse Dash
+          fund_extra: Label
+          account_balance: Balance
+  admin:
+    deposits:
+      banks:
+        index:
+          oneday: Requêtes de ces dernières 24 hours
+          available: Requêtes en cours
+        show:
+          alert: Ne peut être localisé.
+          notice: Recharge réussit avec succès.
+          deposit: Demande de dépôt
+          accept: Accepter
+          target_deposit: Wire Transfère
+          confirm: Confirmer ?
+        update:
+          blank_txid: TxID ne peut rester vide
+      coins:
+        update:
+          notice: Le dépôt a été effectué avec succès
+        index:
+          accept: Accepter
+          accept_confirm: Confirmer le dépôt?
+    members:
+      index:
+        search: Rechercher
+        members: Membres
+        email: Email
+        name: Nom
+        wallet_address: Adresses de porte-monnaie
+      show:
+        member_title: Info utilisateurs
+        actions_title: Action
+        accounts_title: Informations de compte
+        account_versions_title: Enregistrés
+    dashboard:
+      index:
+        accounts_title: Sommaire du compte
+    statistic:
+      filter: Filtre
+      summary: Sommaire
+      click-to-expand: Etendre
+      members:
+        show:
+          table: Resultats
+      orders:
+        show:
+          avg: Moyenne
+          sum: Volume des commandes
+          sum_strike: Par Volume
+          count: Compte
+      trades:
+        show:
+          count: Transactions
+          volume: Volume
+          amount: Montant Total 
+          min_price: Prix minimum
+          max_price: Prix maximum
+          avg_price: Prix moyen
+          amount_fee: Commissions de transactions
+          volume_fee: Total des commissions
+      deposits:
+        show:
+          count: Total
+          amount: Montant total
+      withdraws:
+        show:
+          count: Total
+          amount: Montant total
+          fee: Commissions
+    withdraws:
+      banks:
+        index:
+          one: Demande de retrait en attente
+          all: Commandes 24h
+          empty: Pas de données
+        show:
+          process: En cours
+          succeed: Succès
+          reject: Rejeté
+          succeed_confirm: Confirmer?
+          reject_confirm: Rejeter?
+          withdraw: Retrait
+          empty: Pas de données
+      coins:
+        index:
+          one: Demande de retrait en attente
+          all: Dernières 24 heures
+          empty: Pas de données
+        show:
+          process: En cours
+          succeed: Succès
+          reject: Rejeté
+          succeed_confirm: Procéder au retrait ?
+          reject_confirm: Se désister ?
+          withdraw: Retirer
+        update:
+          notice: Mis a jour avec succès.
+        destroy:
+          notice: Détruit avec succès.
+  deposits/satoshi:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  deposits/bitcoin_cash:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  deposits/litoshi:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  deposits/ripple:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  deposits/duff:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  easy_table:
+    satoshi:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    bitcoin_cash:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    litoshi:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    ripple:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    duff:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    bank:
+      sn: SN
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+  enumerize:
+    account_version:
+      reason:
+        fix: FIX
+        unknown: INCONNU
+        strike_add: TRADE PLUS
+        strike_sub: TRADE SUB
+        strike_fee: TRADE FEE
+        strike_unlock: TRADE UNLOCK
+        order_cancel: Annuler la commande
+        order_submit: Soumettre la commande
+        deposit: DEPOT
+        withdraw: RETRAIT
+        withdraw_lock: RETRAIT VERROUILLE
+        withdraw_unlock: RETRAIT DEVEROUILLE
+    state:
+      done: Terminé
+      wait: en attente
+      cancel: Annuler
+    currency:
+      btc: BTC
+      bch: BCH
+      ltc: LTC
+      xrp: XRP
+      dash: DASH
+      eth: ETH
+    order:
+      state:
+        done: TERMINÉ
+        wait: en attente
+        cancel: ANNULER
+    deposit:
+      aasm_state:
+        submitted: Soumis
+        submitting: Soumettre
+        accepted: Accepté
+        cancelled: Annulé
+        rejected: Rejeté
+        checked: Vérifié
+        warning: Attention
+    withdraw:
+      state:
+        submitting: Soumettre
+        submitted: Soumis
+        rejected: Rejeté
+        accepted: Accepté
+        suspect: Suspect
+        processing: En cours
+        done: Terminé
+        canceled: Annulé
+    fund_source:
+      category:
+        satoshi: Bitcoin
+        bank: Banque 
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: Last &raquo;
+      previous: "&lsaquo; Prev"
+      next: Next &rsaquo;
+      truncate: "..."
+
+  mailer:
+    dear_user: Cher utilisateur,
+    signature: Merci,<br/> l'équipe Peatio
+    please_contact: S'il ne s'agit pas d evous merci de <a href='mailto:%{contact_mail}'>nous contacter</a> ASAP.
+    footer: Ceci est un mail automatique, merci de ne pas y répondre, si vous avez des quesitons, merci de  <a href="mailto:%{contact_mail}">nous contacter</a>.
+  deposit_mailer:
+    accepted:
+      subject: "[Peatio] Votre dépôt a bien été effectué"
+      content: VOtre dépôt de %{currency} a été crédité sur votre compte.
+  system_mailer:
+    daily_stats:
+      member_stats: Stats de Membres
+      signup: S'inscrire
+      activation: Activer
+      asset_stats: Assets Changes
+      trade_stats: Trades Changes
+      asset_value_change_total: Digital Assets Changes Total
+      trades_change_total: Trades Changes Total
+  withdraw_mailer:
+    submitted:
+      subject: "[Peatio] Votre compte a été mis à jour"
+      content: VOtre demande de retrait de %{currency} a bien été prise en compte, nous y procèderons dans les meilleurts délais. Merci d'être patient. Contactez-nous en cas de besoin.
+    processing:
+      subject: "[Peatio] Votre retrait a été mis a jour"
+      content: Votre demande de retrait de  %{currency} est en cours. Merci d'être patient. Contactez-nous en cas de besoin.
+    done:
+      subject: "[Peatio] Votre demande de retrait est a jour"
+      content: Votre demande de retrait de %{currency} est terminée. Contactez-nous en cas de besoin.
+    withdraw_state:
+      subject: "[Peatio] Votre retrait a été mis a jour"
+      your_state: 'Your withdrawal state: '
+
+  'true': vraie
+  'false': faux
+  view_on_github: Voir sur Github
+  slogan:
+    heading: Peatio Open-Source Exchange
+    subheading: Cloud deployment plus simple et plus sur
+    text1: Peatio - Cryptocurrency exchange for managing digital currency.
+    text2: Nous fournissons une installation Peatio ainsi que des services de configuration.
+    markets: Marchés
+    realtime_price:
+      title: Prix en temps réel
+    account_balance:
+      title: Balance
+  gon:
+    ask: Demande
+    bid: Offre
+    notification:
+      title: Peatio Exchange
+      enabled: Notifications activées
+      new_trade: "%{kind} commande#%{id} de %{price} %{quote_unit} pour %{volume} %{base_unit}ã€‚"
+  back: Retour
+  invalid_password: Mot de passe non valide
+  all: TOUT
+  date:
+    formats:
+      date-short: "%m-%d"
+      short: "%m-%d %H:%M"
+      default: "%m/%d/%Y %H:%M"
+  time:
+    formats:
+      date-short: "%m-%d"
+      short: "%m-%d %H:%M"
+      default: "%m/%d/%Y %H:%M"
+  header:
+    home: Home
+    dashboard: Tableau de bord
+    admin: Admin Panel
+    market: Trade
+    settings: Profil
+    signout: Déconnecter
+    funds: Fonds
+    getstart: Marchés
+    assets: Solvabilité
+    history: Historique
+    order_history: Historique de commandes
+    trade_history: Historique de trades
+    account_history: Historique de compte
+    my_profile: Mon Profil
+    account_balance: Total
+    back: Retour
+    total: Total
+    deposit: Dépôt
+    withdraw: Retrait
+  admin_header:
+    deposits: Dépôts
+    withdraws: Retraits
+    statistics: Stats des données
+  footer:
+    about: A propos
+    privacy: Privacy
+    contact: Nous contacter
+    price: Prix
+    liability_proof: Preuve de confiance
+  actions:
+    go: Aller
+    submit: Soumettre
+    deposit: Dépôt
+    select: Veuillez séléctionner
+    unlock: Déverrouiller
+    confirm: Confirmer
+    back: Retour
+    block: voir dans le bloc
+    destroy: Effacer
+    destroy_confirm: Etes-vous sur de vouloir effacer?
+    detail: Details
+    publish: Publier
+    edit: Editer
+    preview: Prévusualiser
+    close: Fermer
+    cancel: Annuler
+    view: Voir
+    member: Membre
+    transact: Transactions
+    reject: Rejeter
+    clipboard:
+      click: Cliquer pour copier
+      done: Copié
+  chart:
+    open: Ouvert
+    high: Elevé
+    low: Faible
+    close: Fermé
+    price: Prix
+    volume: Volume
+    candlestick: 'Candlestick'
+    line: 'Ligne'
+    minute: m
+    hour: Heure
+    day: Jour
+    week: Semaine
+    month: Mois
+    year: Année
+    zoom: Zoom
+    ask: DEMANDE
+    bid: OFFRE
+    depth: Profondeur
+    depth_title: Profondeur de Marché
+  'yes': 'Oui'
+  'no': 'Non'
+  helpers:
+    action:
+      view: Voir
+      customer_service: ous contacter
+    submit:
+      order_ask:
+        create: DEMANDE
+      order_bid:
+        create: OFFRE
+      member:
+        update: Ouvrir un compte
+      fund_source:
+        create: Enregistrer
+      deposit:
+        create: Dépôt
+      withdraw:
+        create: Créer
+  activations:
+    new:
+      login_required: Veuilelz vous connecter.
+  layouts:
+    admin:
+      menus:
+        sections:
+          members: Membres
+          deposits: Dépôts
+          sites_statistics: Analyses
+          operating: Operations
+        items:
+          operating:
+            proofs: Preuves
+            deposits: Dépôts
+            withdraws: Retraits
+          deposits:
+            currency: Dépôts
+    application:
+      close: Fermer
+  members:
+    edit:
+      name: Veuillez.
+  sessions:
+    new:
+    create:
+      disabled: VOtre compte a été désactivé, contactez les administrateurs en cas de problème.
+    failure:
+      account_locked: Trop de tentatives échouées. Afin d'assurer votre sécurité, votre compte a été a été verrouillé. POur le déverrouiller changez votre mot de passe en cliquant sur "mot de passe oublié". 
+      error: Erreur d'ID client ou mot de passe. Merci de réessayer.
+  shared:
+    admin:
+      member:
+        member_info: Infos membres
+        inactive: Inactif
+        deactive: Désactivé
+      account:
+        account_info: Infos de compte
+        payment_address: Adresse de dépôt
+    alert:
+      modern: Afin de ne pas altérer votre expérience de trading, merci d'utiliser l'un des browsers les plus utilisés, nous vous recommandons <a target='_blank' href='https://www.google.com/#q=google+chrome'>Google
+        Chrome</a>ã€‚
+      pusher_unavailable: Impossible de se connecter... <a
+        href='#' class='alert-link'>Rafraichier la page</a>.
+    header:
+      balance: Balance
+    header_account_balance:
+      locked: Verrouillé
+    market:
+      ticker:
+        ask_price: Demande
+        bid_price: Offre
+        high_price: Elevé
+        low_price: Faible
+        volume: Volume
+        latest_price: Dernier
+    frame:
+      deposit_now: Dépôser maintenant
+  withdraw_channel:
+    bank:
+      key: Transfère bancaire
+      title: Transfère bancaire
+      intro: Dépôts bancaire, Recommandé pour les dépôts élevés
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    satoshi:
+      key: Blockchain
+      title: Bitcoin Blockchain
+      intro: Retirer des BTC vers votre porte-monnaie BTC
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    bitcoin_cash:
+      key: Blockchain
+      title: Bitcoin Blockchain
+      intro: Retirer des BTC-Cash vers votre porte-monnaie BTC-Cash
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    litoshi:
+      key: Blockchain
+      title: Bitcoin Blockchain
+      intro: Retirer des LTC vers votre porte-monnaie LTC
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    ripple:
+     key: Blockchain
+      title: Bitcoin Blockchain
+      intro: Retirer des XRP vers votre porte-monnaie XRP
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    duff:
+      key: Blockchain
+      title: Bitcoin Blockchain
+      intro: Retirer des DASH vers votre porte-monnaie DASH
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    ethereum:
+      key: Blockchain
+      title: Bitcoin Blockchain
+      intro: Retirer des ETH vers votre porte-monnaie ETH
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+  withdraws:
+    invalid_address: n'est pas valide. Vous ne pouvez pas retirer vers cette adresse.
+  withdraws/bank:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/satoshi:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/bitcoin_cash:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/litoshi:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/duff:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/ripple:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+      failed: Faileden:
+  activerecord:
+    models:
+      api_tokens: API Token
+      trade: Trades
+      order: Commandes
+      order_bid: OFFRE
+      order_ask: DEMANDE
+      withdraw: Retirer
+      deposit: Déposer
+      payment_transaction: Paiement
+      statistic/orders_grid: Stats des commandes
+      statistic/trades_grid: Stats de trades
+      statistic/members_grid: Stats de membres
+      statistic/deposits_grid: Stats de dépôts
+      statistic/withdraws_grid: Stats de retraits
+      admin/deposits_grid: Dépôts
+      admin/withdraws_grid: Retraits
+      deposits/bank: Dépôts bancaire
+      withdraws/bank: Retraits bancaires
+      withdraws/satoshi: Retraits
+      withdraws/ripple: Retraits
+    attributes:
+      api_token:
+        access_key: Access Key
+        trusted_ip_list: IP liste blanche
+        ip_whitelist: IP liste blanche
+        label: Label
+        actions: Actions
+      fund_source:
+        address: Adresse
+        category: Categorie
+        label: Label
+      account:
+        currency: Monnaie
+        balance_and_locked: Balance / Verrouillé
+        balance: Balance
+        locked: Gelé
+      deposit:
+        state: Etat
+        tx_id: TxID
+        member_id: ID de membres
+        created_at: Créé le
+        address: Adresse
+        amount: Montant
+        done_at: Completé le
+        sn: SN
+      withdraw:
+        id: ID
+        sn: SN
+        withdraw_id: ID
+        created_at: Créé le
+        done_at: Terminé le
+        sum: Somme
+        fee: Commission
+        currency: Monnaie
+        amount: Montant
+        address: Adresse
+        state: Etat
+        state_text: Etat
+        tx_id: TxID
+        fund_source_id: Adresse de retrait
+        detail: Details
+      account_version:
+        id: ID
+        locked: Gelé
+        amount: Montant
+        balance: Balance
+        reason: Raison
+        reason_text: Raison
+        modifiable_id: LINK ID
+        modifiable_type: LINK
+        created_at: Créé le
+        in: Entrants
+        out: Sortants
+        fee: Commission
+      trade:
+        bid: OFFRE
+        ask: DEMANDE
+        fee: Commission
+        price: Prix
+        volume: Volume
+        category: Offre/Demande
+        order: Commande
+      order:
+        bid: Offre
+        ask: Demande
+        price: Prix
+        total: Total
+        volume: Volume
+        origin_volume: Volume
+        sum: Somme
+        category: Offre/Demande
+        kind: Genre
+        at: le
+        id: ID
+        state: Etat
+        operation: Operation
+      payment_transaction:
+        at: Le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmations
+        state: Etat
+        state_done: Terminé
+        state_wait: En attente
+      member:
+        id: ID
+        name: Nom réel
+        created_at: Enregistré le
+        sn: SN
+      withdraws/bank:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_source: Banque
+        fund_extra: Banque
+        fund_extra_text: Banque
+        fund_uid: Compte en Banque
+        sum: Somme
+        fee: Commission
+        amount: Montant
+        remark: Remarque
+        created_at: Créé le
+      deposits/bank:
+        created_at: Créé le
+        holder: Détenteur
+        fund_extra: Banque d'envoi
+        fund_uid: Benéficiaire
+        member_sn: Membre SN
+        amount: Montant
+        sn: SN
+        state_and_action: Etat/Action
+        label: Label
+        fund_source: Fonds
+      deposits/satoshi:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmation
+        aasm_state_text: Etat
+      deposits/bitcoin_cash:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmation
+        aasm_state_text: Etat
+      deposits/litoshi:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmation
+        aasm_state_text: Etat
+      deposits/ripple:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmation
+        aasm_state_text: Etat
+      deposits/duff:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmation
+        aasm_state_text: Etat
+      deposits/ethereum:
+        created_at: Créé le
+        txid: ID de Transaction
+        amount: Montant
+        confirmations: Confirmation
+        aasm_state_text: Etat
+      withdraws/satoshi:
+        id: ID
+        state_and_actions: State/Action
+        fund_extra_text: Withdraw Label
+        fund_extrat: Withdraw Label
+        fund_source: Bank
+        fund_uid: Account
+        created_at: Created At
+        sum: Amount
+        amount: Amount
+        remark: Remark
+        fee: Fee
+      withdraws/bitcoin_cash:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text:  Label de retrait
+        fund_extrat: Label de retrait
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commission
+      withdraws/litoshi:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text:  Label de retrait
+        fund_extrat: Label de retrait
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commission
+      withdraws/ripple:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text:  Label de retrait
+        fund_extrat: Label de retrait
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commission
+      withdraws/duff:
+        id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text:  Label de retrait
+        fund_extrat: Label de retrait
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commission
+      withdraws/ethereum:
+       id: ID
+        state_and_actions: Etat/Action
+        fund_extra_text:  Label de retrait
+        fund_extrat: Label de retrait
+        fund_source: Banque
+        fund_uid: Compte
+        created_at: Créé le
+        sum: Somme
+        amount: Montant
+        remark: Remarque
+        fee: Commission
+    errors:
+      models:
+        order_bid:
+          attributes:
+            sum:
+              expensive: Cher
+            price:
+              range: Gamme de prix erronée
+        order_ask:
+          attributes:
+            origin_volume:
+              expensive: Cher
+            price:
+              range: Gamme de prix erronée
+        account:
+          attributes:
+            balance:
+              less: Moins
+        fund_source:
+          attributes:
+            address:
+              satoshi_ismine: Adresse utilisée
+              satoshi_invalid: Adresse invalide
+              bitcoin_cash_ismine: Adresse utilisée
+              bitcoin_cash_invalid: Adresse invalide
+              litoshi_ismine: Adresse utilisée
+              litoshi_invalid: Adresse invalide
+              ripple_ismine: Adresse utilisée
+              ripple_invalid: Adresse invalide
+              duff_ismine: Adresse utilisée
+              duff_invalid: Adresse invalide
+              ethereum_ismine: Adresse utilisée
+              ethereum_invalid: Adresse invalide
+        withdraw:
+          account_balance_is_poor: L'approvisionnement du compte est insuffisant
+          attributes:
+            password:
+              match: invalide
+            amount:
+              poor: insuffisant
+              bank_min: Moins de 5000.00
+        withdraws/satoshi:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait.
+              invalid: Adresse de retrait non valide, veuillez réessayer.
+              ismine: Veuillez utiliser une nouvelle adresse
+        withdraws/bitcoin_cash:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait.
+              invalid: Adresse de retrait non valide, veuillez réessayer.
+              ismine: Veuillez utiliser une nouvelle adresse
+        withdraws/bitcoin_cash:
+        withdraws/litoshi:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait.
+              invalid: Adresse de retrait non valide, veuillez réessayer.
+              ismine: Veuillez utiliser une nouvelle adresse
+        withdraws/bitcoin_cash:
+        withdraws/ripple:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait.
+              invalid: Adresse de retrait non valide, veuillez réessayer.
+              ismine: Veuillez utiliser une nouvelle adresse
+        withdraws/bitcoin_cash:
+        withdraws/duff:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait.
+              invalid: Adresse de retrait non valide, veuillez réessayer.
+              ismine: Veuillez utiliser une nouvelle adresse
+        withdraws/bitcoin_cash:
+        withdraws/ethereum:
+          attributes:
+            fund_uid:
+              blank: Veuillez entrer votre adresse de retrait.
+              invalid: Adresse de retrait non valide, veuillez réessayer.
+              ismine: Veuillez utiliser une nouvelle adresse
+        withdraws/bitcoin_cash:
+        application:
+          attributes:
+            redirect_uri:
+              fragment_present: ne peut-être partiel
+              invalid_uri: L'URI doit être valide.
+              relative_uri: L'RI doit être abolue.
+      messages:
+        undef: raison inconnue
+        less: Moins
+        verify: Erreur vérifiée
+        orders:
+          price: limite de prix %{l} ~ %{h}
+          sum: Somme limite %{l} ~ %{h}
+          precision: precision minimum %{p}
+  datagrid:
+    empty: Pas de données
+    filters:
+      date:
+        range_separator: " de "
+      datetime:
+        range_separator: " de "
+    form:
+      submit: Rechercher
+    admin_deposits_grid:
+      columns:
+        sn: SN
+        created_at: Créé le
+        fund_extra_text: Extra
+        fund_uid: UID
+        txid: TXID
+        amount: Montant
+        fee: Commission
+        aasm_state_text: Etat
+    bank_deposits_grid:
+      columns:
+        sn: SN
+        created_at: Créé le
+        fund_extra_text: Banque
+        fund_uid: Compte
+        amount: Montant
+        fee: Commission
+        aasm_state_text: Etat
+    coin_deposits_grid:
+      columns:
+        sn: SN
+        txid: ID deTransaction
+        created_at: Créé le
+        amount: Montant
+        aasm_state_text: Etat
+        confirmations: Confirmations
+    withdraws_grid:
+      columns:
+        sn: SN
+        name: Nom
+        amount: Montant
+        fee: Commission
+        created_at: Créé le
+        done_at: Completé le
+        state_text: Etat
+    members_grid:
+      columns:
+        sn: Numéro de série
+        created_at: Créé le
+        actions: Actions
+    account_versions_grid:
+      columns:
+        created_at: Créé le
+        balance: Balance
+        in: Entrant
+        out: Sortant
+        amount: Montant
+        reason_text: Raison
+        modifiable_type: Link
+        fee: Commission
+      filters:
+        reason: Raison
+        currency: Monnaie
+    statistic_members_grid:
+      columns:
+        sn: Numéro de série
+        id: ID
+        email: Email
+        created_at: Créé le
+        detail: Details
+        action: Action
+      filters:
+        sn: Numéro de série
+        created_at: Créé le
+    statistic_orders_grid:
+      columns:
+        id: Numéro de série
+        price: Prix
+        volume: Volume
+        created_at: Créé le
+        state_text: Etat
+        member_id: Membre
+      filters:
+        state: Etat
+        currency: Monnaie
+        created_at: Créé le
+        type: Demande/Offre
+    statistic_trades_grid:
+      columns:
+        id: ID
+        price: Prix
+        volume: Volume
+        strike_amount: Montant
+        created_at: Créé le
+      filters:
+        currency: Monnaie
+        created_at: Créé le
+    statistic_deposits_grid:
+      columns:
+        member: Membre
+        tx_id: TxID
+        amount: Montant
+        currency: Monnaie
+        created_at: Créé le
+        state_text: Etat
+      filters:
+        currency: Monnaie
+        state: Etat
+        created_at: Créé le
+    statistic_withdraws_grid:
+      columns:
+        member: Membre
+        address: Adresse
+        amount: Montant
+        currency: Monnaie
+        created_at: Créé le 
+        state_text: Etat
+      filters:
+        state: Etat
+        created_at: Créé le
+  deposit_channel:
+    bank:
+      key: Transfère bancaire
+      title: Transfère bancaire
+      intro: Transfère de dépôt, conseillé pour les montant élevés
+      latency: 10 minutes
+      transfer: Manuel
+      go: Dépôt
+    satoshi:
+      key: Block Chain
+      title: Dépôt de BTC
+      intro: Dépôser des BTC depuis votre propre-porte-monnaie vers votre compte Peatio. 
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Dépôt
+    bitcoin_cash:
+      key: Block Chain
+      title: Dépôt de BTC-CHash
+      intro: Dépôser des BTC-Cash depuis votre propre-porte-monnaie vers votre compte Peatio. 
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Dépôt
+    litoshi:
+      key: Block Chain
+      title: Dépôt de LTC
+      intro: Dépôser des LTC depuis votre propre-porte-monnaie vers votre compte Peatio. 
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Dépôt
+    ripple:
+      key: Block Chain
+      title: Dépôt de XRP
+      intro: Dépôser des XRP depuis votre propre-porte-monnaie vers votre compte Peatio. 
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Dépôt
+    duff:
+      key: Block Chain
+      title: Dépôt de DASH
+      intro: Dépôser des DASH depuis votre propre-porte-monnaie vers votre compte Peatio. 
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Dépôt
+    ethereum:
+      key: Block Chain
+      title: Dépôt de ETH
+      intro: Dépôser des ET depuis votre propre-porte-monnaie vers votre compte Peatio. 
+      latency: 1 confirmation
+      transfer: Manuel
+      go: Dépôt
+  deposits/bank:
+    aasm_state:
+      submitting: Soumettre
+      cancelled: Annulé
+      submitted: Soumis
+      accepted: Accepté
+      rejected: Rejeté
+      checked: Vérifié
+      warning: Attention
+  private:
+    deposits:
+      banks:
+        destroy:
+          notice: La demande de révocation a été effectuée avec succès. 
+        create:
+          notice: Demande de réapprovisionnment effectuée.
+          submit: Soumettre
+        new:
+          fund_source: Séléctionner la provenance des fonds.
+          manage_fund_source: Gérer les fonds
+          submit: Soumettre
+        edit:
+          bank: Compte récipissaire.
+          branch: Compte récipissaire
+          hodler: Détenant
+          account: Bénéficiaire
+    history:
+      transaction:
+        Deposit: Dépot
+        Withdraw: Retrait
+      account:
+        currency: Monnaie
+        buy: Acheter
+        sell: Vendre
+        filter_by_type: Filtrer par type
+        account_history: Historique de compte
+        type: type
+        timestamp: date et heure
+        fee: 
+        currency: Monnaie
+        amount: Montant
+        txid: Txid
+      orders:
+        order_history: Historique de commandes
+        id: ID
+        type: Type
+        state: Etat
+        market: Marché
+        price: Prix
+        volume: Volume
+        average_price: Prix moyen
+        fullfilled_volume: Fullfilled
+        timestamp: Créé le
+      order:
+        ask: Vendre
+        bid: Achter
+        wait: Ouvert
+        cancel: Annulé
+        done: Terminé
+      trades:
+        trade_history: Historique de trade
+        side: Side
+        created_at: Créé le
+        base_currency: Monnaie
+        base_amount: Montant
+        quote_currency: Monnaie
+        quote_amount: Montant
+        price: Prix
+      trade:
+        sell: Vendre
+        buy: Acheter
+    trade:
+      trades:
+        orders:
+          title: Commandes
+        trades:
+          title: Trades
+        charges:
+          title: Charges
+      orders:
+        index:
+          done: Terminé
+          cancel: Annuler
+          confirm: 'Etes-vous certains de vouloir annuler #%{id}?'
+        destroy:
+          'true': "#%{id} Annulé avec succès"
+          'false': "#%{id} Annulation refusée"
+    withdraws:
+      update:
+        request_accepted: Demande de retrait acceptée.
+      destroy:
+        request_canceled: Demande de retrait annulée.
+      index:
+        fee: Commission
+        total: Total
+        withdraw_history: Historique des retraits
+      banks:
+        update:
+          notice: La demande de retrait a été effectuée, nous la traiterons dans les plus brefs délais.
+        destroy:
+          notice: Transfère bancaire annulé, les fonds bloqués vous ont été retournés.
+          fund_source: Séléctionner la provenance. 
+          manage_fund_source: Gérer les fonds.
+          submit: Soumettre
+          allin: Tout
+        create:
+          notice: Demande de retrait effectuée. Veuillez touver les informations ci-dessous afin de compléter votre transfère.
+      satoshis:
+        destroy:
+          notice: Transfère bancaire annulé, les fonds bloqués vous ont été retournés.
+        update:
+          notice: La demande de retrait a été effectuée, nous la traiterons dans les plus brefs délais
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: Demande de retrait effectuée. Veuillez touver les informations ci-dessous afin de compléter votre transfère.
+      bitcoin_cash:
+        destroy:
+          notice: Transfère bancaire annulé, les fonds bloqués vous ont été retournés.
+        update:
+          notice: La demande de retrait a été effectuée, nous la traiterons dans les plus brefs délais
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: Demande de retrait effectuée. Veuillez touver les informations ci-dessous afin de compléter votre transfère.
+      litoshis:
+        destroy:
+          notice: Transfère bancaire annulé, les fonds bloqués vous ont été retournés.
+        update:
+          notice:La demande de retrait a été effectuée, nous la traiterons dans les plus brefs délais
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: Demande de retrait effectuée. Veuillez touver les informations ci-dessous afin de compléter votre transfère.
+      ripples:
+        destroy:
+          notice: Transfère bancaire annulé, les fonds bloqués vous ont été retournés.
+        update:
+          notice: La demande de retrait a été effectuée, nous la traiterons dans les plus brefs délais
+          alert_two_factor: Erreur de Two-Factor Authentication
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: Demande de retrait effectuée. Veuillez touver les informations ci-dessous afin de compléter votre transfère.
+      duffs:
+        destroy:
+          notice: Transfère bancaire annulé, les fonds bloqués vous ont été retournés.
+        update:
+          notice: La demande de retrait a été effectuée, nous la traiterons dans les plus brefs délais
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: Demande de retrait effectuée. Veuillez touver les informations ci-dessous afin de compléter votre transfère.
+      ethereums:
+        destroy:
+          notice: Transfère bancaire annulé, les fonds bloqués vous ont été retournés.
+        update:
+          notice: La demande de retrait a été effectuée, nous la traiterons dans les plus brefs délais
+        new:
+          submit: Soumettre
+          allin: Tout
+          fund_source_label: Label
+          manage_fund_source: Gérer les fonds
+        create:
+          notice: Demande de retrait effectuée. Veuillez touver les informations ci-dessous afin de compléter votre transfère.
+    account_versions:
+      index:
+        description: Toutes les transactions / actions sont documentées.
+    api_tokens:
+      user_tokens:
+        no_token: VOus n'avez pas d'API Tokens.
+        edit: Editer
+        destroy: Détruire
+        destroy-confirm: Etes-vous sur?
+        create: Créér un nouveau Token
+        http: HTTP API Document
+        websocket: Websocket API Document
+        more: 'Pour plus d'informations, merci de regarder la section API section sur github:'
+      unbind
+        success: Révoqué avec succès.
+        failed: Révocation échouée.
+      new:
+        label_hint: Les labels vous aident a vous souvenir de l'utilisation de vos Tokens  (optionnel).
+      create:
+        success: API token créé avec succès.
+        failed: Echec de création des API Tokens. Veuillez réessayer ou contacter les administrateurs.
+        desc: Veuillez copier coller les clées ci-dessous et les sauvegarder dans un endroit sur. Ces clés ne vous serons plus fournies ultérieurement.
+      edit:
+        access_key_hint: Créé le %{created_at}
+        label_hint: Les labels vous aident a vous souvenir de l'utilisation de vos Tokens  (optionnel).
+        ip_whitelist_hint: Séparez les IP avec des virgules. Si aucune IP n'est référencée sela signifit que vous autorisé n'importe qui a y accèder
+      update:
+        success: Enregistré avec succès
+        failed: Echec de l'enregistrement. Veuillez réessayer ou contacter les administrateurs.
+        success: Le Token a été effacé avec succès.
+        failed: Echac de destruction du token.
+    assets:
+      index:
+        liability-proof: Preuve de responsabilité
+        coin-assets: ' porte-monnaie %{currency}'
+        fiat-assets: ' porte-monnaie de %{currency}'
+      liability_tabs:
+        verify-coin: 'Vérifier mon porte-monnaie de %{currency} '
+        verify-fiat: 'Vérifier mon porte-monnaie de %{currency}'
+        coin-assets-total: 'Total %{currency} assets of exchange: '
+        fiat-assets-total: 'Total %{currency} assets of exchange: '
+      liability_proof:
+        title: Preuve de responsabilité
+        intro: En échange, nos passifs se réfèrent à la somme d'argent
+          crypto monnaies et monnaies fiduciaires) que nos utilisateurs nous font confiance. Sur
+          cette page, nous vous présentons nos responsabilités. Nous vous fournissons également un     moyen de vérifier que le solde de votre compte fait effectivement partie de nos passifs.
+      liability_data:
+        liability-proof-generating: Preuve de responsabilité en cours, cela peut prendre une trentaine de minutes.
+        root-json: Root node
+        partial-tree: 'My %{currency} Assets: '
+        get-partial-tree: Get my partial tree data
+        timestamp: The proof data is generated at %{time}.
+        go-verify: Verify
+      coin_assets:
+        title: '%{currency} Assets'
+        intro: "Tous les porte-monnaie de %{currency} sont listés ici."
+        total: 'Total %{currency} '
+        address: Adresse
+      fiat_assets:
+        title: 'Porte-monnaie de %{currency}'
+        intro: "Tous les porte-monnaie de %{currency} sont listés ici."
+        total: 'Total %{currency} '
+      partial_tree:
+        success: 'Success! Verification data generated at: %{timestamp}'
+    markets:
+      show:
+        error: Echec
+        success: Succès
+        analysis_panel: Analyse
+        help_panel: Aide
+        done: TERMINE
+        cancel: ANNULER
+        cancel_confirm: Etes-vous certains de vouloir annuler ?
+        confirm: CONFIRMER
+        ask_order: 'DEMANDE ##sn#'
+        bid_order: 'OFFRE ##sn#'
+        my_active_order: Actif
+        my_done_order: Terminé
+        trades: Trading
+        chat: Chat Channel
+      market_list:
+        all: Tous les Marchés
+        all_html: "<i class='fa fa-check'></i><span>Tous les Marchés</span>"
+        ccy_html: "<i class='fa fa-check'></i><span>%{currency} Marchés</span>"
+        price: Prix
+        change: "24h %"
+      range_switch:
+        switch_1: 1m
+        switch_5: 5m
+        switch_15: 15m
+        switch_30: 30m
+        switch_60: 1h
+        switch_120: 2h
+        switch_240: 4h
+        switch_360: 6h
+        switch_720: 12h
+        switch_1440: 1j
+        switch_4320: 3j
+        switch_10080: 1sem
+      depths:
+        price: Prix
+        amount: Montant
+        buy: Acheter
+        sell: Vendre
+        ask_orders: Vendre
+        bid_orders: Acheter
+      ticker:
+        last: Dernier prix
+        ask: DEMANDE
+        bid: OFFRE
+      account_balance:
+        title: Balance
+        available: Disponible %{currency}
+      bid_entry:
+        action: "Acheter %{currency}"
+        price: Prix
+        last_price: Dernier prix
+        amount: Montant
+        total: Total
+      ask_entry:
+        action: "Vendre %{currency}"
+        price: Prix
+        last_price: Dernier prix
+        amount: Montant
+        total: Total
+      place_order:
+        price_high: ELEVE
+        price_low: FAIBLE
+        full_bid: REMPLI
+        full_ask: VIDE
+      order_book:
+        title: Cahier des commandes
+        volume: Volume
+        price: Prix
+        amount: Montant
+        ask: DEMANDE
+        bid: OFFRE
+        fade_toggle_depth: Profondeur de Marché
+      trade_state:
+        new: Nouveau
+        partial: Partiel
+      market_trades:
+        all: Tout
+        my: les miens
+        all_html: "<i class='fa fa-check'></i><span>TOUT</span>"
+        my_html: "<i class='fa fa-check'></i><span>Miens</span>"
+        time: Le
+        price: Prix
+        volume: Volume
+      header:
+        network: Connexion
+        vol: 24h Volume
+        high: Elevé
+        low: Faible
+        change: Change
+      settings:
+        sound: Sons
+        notification: Notifications
+        funds: "Fonds"
+        signout: "Se déconnecter"
+        settings: "Profil"
+        history: "Historique"
+      account_summary:
+        title: Sommaire
+        account: Compte
+        amount: Montant
+        locked: Geler
+        view_all_accounts: "Voir tout"
+        hide_all_accounts: "Cacher le reste"
+      my_orders:
+        orders_wait: Dernières commandes
+        orders_done: Commandes terminées
+        orders_cancel: Commandes annulées
+        no_open_orders: VOus n'avez pas de commandes en cours.
+        clear_all_html: "<i class='fa fa-trash'></i><span>Tout annuler</span>"
+        clear_bids_html: "<i class='fa fa-trash'></i><span>Annuler les offres</span>"
+        clear_asks_html: "<i class='fa fa-trash'></i><span>Annuler les demandes</span>"
+        confirm_clear_all: Etes-vous certains de vouloir tout annuler?
+        confirm_clear_bids: Etes-vous certains de vouloir annuler toutes les offres?
+        confirm_clear_asks: Etres-vous certains de vouloir annuler toutes les demandes?
+        price: Prix
+        volume: Volume
+        amount: Montant
+        time: Le
+      mask:
+        warning: Veuillez <a class=text-up href='/'>vous inscrire</a> ou <a class=text-up
+          href='/'>vous connecter</a> for operation
+      klime_chart:
+        title: Candlestick Charts
+      global:
+        global_orders_title: COMMANDES
+        global_trades_title: TRADES
+      chat:
+        title: Chat Channel
+    settings:
+      success: Paramétres mis a jour.
+      failure: Mot de pase non valide, veuillez réessayer.
+      index:
+        reauthenticate: Authentication
+        auth-verified: Veuillez tout d'abord confirmer votre identité.
+        api_tokens:
+          title: API Tokens
+          description: Créer et gérer vos API Tokens.
+          go: Aller
+  guides:
+    private:
+      settings:
+        panel: Paramétres
+        index:
+          intro: Gérer votre profil.
+      api_tokens:
+        panel: API Tokens
+        index:
+          title: Mes Tokens
+          intro: La liste de tout vos Tokens.
+        new:
+          title: Créer API Token
+        create:
+          title: Créer API Token
+        edit:
+          title: Editer les API Token
+        update:
+          title: Editer les API Token
+    panels:
+      balance: Balance
+    sessions:
+      panel: Se connecter
+      new:
+        title: Me connecter à mon compte
+        intro: Vous connecter a Peatio pour pouvoir échanger.
+      failure:
+        title: Me connecter à mon compte
+        intro: Vous connecter a Peatio pour pouvoir échanger.
+  simple_form:
+    placeholders:
+      deposit:
+        bank:
+          amount: Montant minimum de 100
+      session:
+        email: Adresse E-mail
+        password: Mot de passe
+      order_bid:
+        origin_volume: Acheter Volume
+        sum: Somme
+      order_ask:
+        origin_volume: Vendre Volume
+        sum: Total
+      withdraw:
+        bank:
+          sum: Montant minimum de 100
+        satoshi:
+          sum: Montant minimum de 0.001
+          fund_extra: Les labels vous aident a vous souvenir de l'utilisation de vos Tokens  (optionnel).
+        ripple:
+          sum: Montant minimum de 0.001
+          fund_extra: Les labels vous aident a vous souvenir de l'utilisation de vos Tokens  (optionnel).
+    hints:
+      deposit:
+        bank:
+          sum: "<a target='_balance' href='#'>Commissions</a>"
+          sn: "<span class='text-danger'>Veuillez copier le code SN dans votre message, sans cela nous pourrons traiter votre demande dans les plus brefs délais
+        bank:
+          sum: "<a target='_balance' href='#'>Commissions</a>"
+          fund_extra: Si votre banque n'est pas listée, merci de contacter le service-client.
+        satoshi:
+          sum: "<a target='_balance' href='#'>Commission</a>"
+        bitcoin_cash:
+          sum: "<a target='_balance' href='#'>Commission</a>"
+        litoshi:
+          sum: "<a target='_balance' href='#'>Commission</a>"
+        ripple:
+          sum: "<a target='_balance' href='#'>Commission</a>"
+        duff:
+          sum: "<a target='_balance' href='#'>Commission</a>"
+    creating: Création...
+    updating: UMise à jour...
+    buttons:
+      or: Ou
+      cancel: Annuler
+    'yes': 'Oui'
+    'no': 'Non'
+    required:
+      text: requis
+      mark: "*"
+    error_notification:
+      default_message: 'Veuillez vérifier les problèmes ci-dessous'
+    labels:
+      defaults:
+        title: Titre
+      fund_source:
+        label: Label
+        address: Adresse
+        category: Categorie
+      withdraw:
+        bank:
+          fund_extra: Banque
+          sum: Somme
+          account_balance: Balance
+        satoshi:
+          fee: Commission
+          sum: Somme
+          fund_uid: Adresse BTC
+          fund_extra: Label
+          account_balance: Balance
+        bitcoin_cash:
+          fee: Commission
+          sum: Somme
+          fund_uid: Adresse BTC
+          fund_extra: Label
+          account_balance: Balance
+        litoshi:
+          fee: Commission
+          sum: Somme
+          fund_uid: Adresse BTC
+          fund_extra: Label
+          account_balance: Balance
+        ripple:
+          fee: Commission
+          sum: Somme
+          fund_uid: Adresse BTC
+          fund_extra: Label
+          account_balance: Balance
+        duff:
+          fee: Commission
+          sum: Somme
+          fund_uid: Adresse BTC
+          fund_extra: Label
+          account_balance: Balance
+  admin:
+    deposits:
+      banks:
+        index:
+          oneday: Requêtes ces dernières 24h
+          available: Toutes les requêtes en attente.
+        show:
+          alert: Ne peut-être localisé.
+          notice: The recharge have been successful.
+          deposit: Dépôt
+          accept: Accepter
+          target_deposit: Transfère
+          confirm: Confirmer la recharge?
+        update:
+          blank_txid: TxID ne peut rester vide
+      coins:
+        update:
+          notice: Le dépôt a été effectué avec succès
+        index:
+          accept: Accepter
+          accept_confirm: Confirmer le dépôt?
+    members:
+      index:
+        search: Rechercher
+        members: Membres
+        email: Email
+        name: Nom
+        wallet_address: Adresse porte-monnaie
+      show:
+        member_title: Infos utilisateurs
+        actions_title: Action
+        accounts_title: Infos de compte
+        account_versions_title: Enregistrés
+    dashboard:
+      index:
+        accounts_title: Sommaire du compte
+    statistic:
+      filter: Filtrer
+      summary: Sommaire
+      click-to-expand: Etaler
+      members:
+        show:
+          table: Resultats
+      orders:
+        show:
+          avg: Moyenne
+          sum: Volume de commande
+          sum_strike: Par Volume
+          count: Compte
+      trades:
+        show:
+          count: Transactions
+          volume: Volume
+          amount: Total
+          min_price: Prix minimum
+          max_price: Prix maximum
+          avg_price: Prix moyen
+          amount_fee: Commissions de Transaction
+          volume_fee: Total des commissions
+      deposits:
+        show:
+          count: Total
+          amount: Total 
+      withdraws:
+        show:
+          count: Total
+          amount: Total
+          fee: Commissions
+    withdraws:
+      banks:
+        index:
+          one: Demandes de retrait en attente
+          all: Commandes de ces 24 dernières heures
+          empty: Pas de données
+        show:
+          process: En cours
+          succeed: Terminé
+          reject: Rejeté
+          succeed_confirm: Confirmer ?
+          reject_confirm: Confirmer le rejet ?
+          withdraw: Retrait
+          empty: Pas de données
+      coins:
+        index:
+          one: Retraits en attente
+          all: Dernières 24h
+          empty: Pas de données
+        show:
+          process: Accepté
+          succeed: Retiré
+          reject: Rejeté
+          succeed_confirm: Procéder au retrait?
+          reject_confirm: Rejeter le retrait?
+          withdraw: se retirer
+        update:
+          notice: Mis a jour avec succès.
+        destroy:
+          notice: Détruit avec sucès.
+  deposits/satoshi:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  deposits/bitcoin_cash:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  deposits/litoshi:
+    aasm_state:
+     submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  deposits/ripple:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  deposits/duff:
+    aasm_state:
+      submitted: Soumis
+      accepted: Accepté
+      checked: Vérifié
+      warning: Attention
+  easy_table:
+    satoshi:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    bitcoin_cash:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    litoshi:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    ripple:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    duff:
+      amount: Montant
+      txid: TxId
+      created_at: Créé le
+      confirmations: Confirmations
+      state_and_actions: Etat/Actions
+    bank:
+      sn: SN
+      amount: Amount
+      created_at: At
+      fund_source: Fund Source
+      memo: Memo
+      state_and_actions: State/Action
+  enumerize:
+    account_version:
+      reason:
+        fix: FIX
+        unknown: INCONNU
+        strike_add: TRADE 
+        strike_sub: TRADE 
+        strike_fee: commissions de TRADE 
+        strike_unlock: TRADE déverouillé
+        order_cancel: Commande annulée
+        order_submit: Commande soumise
+        deposit: DEPOT
+        withdraw: RETRAIT
+        withdraw_lock: Retrait verrouillé
+        withdraw_unlock: Retrait débloqué
+    state:
+      done: Terminé
+      wait: en attente
+      cancel: Annuler
+    currency:
+      btc: BTC
+      bch: BCH
+      ltc: LTC
+      xrp: XRP
+      dash: Dash
+      eth: ETH
+    order:
+      state:
+        done: Terminé
+        wait: en attente
+        cancel: Annuler
+    deposit:
+      aasm_state:
+        submitted: Soumis
+        submitting: En cours
+        accepted: Accepté
+        cancelled: Annulé
+        rejected: Rejeté
+        checked: Vérifié
+        warning: Attention
+    withdraw:
+      state:
+        submitting: Soumettre
+        submitted: Soumis
+        rejected: Rejeté
+        accepted: Accepté
+        suspect: Suspect
+        processing: En cours
+        done: Terminé
+        canceled: Annulé
+    fund_source:
+      category:
+        satoshi: Bitcoin
+        bank: Banque
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: Last &raquo;
+      previous: "&lsaquo; Prev"
+      next: Next &rsaquo;
+      truncate: "..."
+
+  mailer:
+    dear_user: Cher utilisateur,
+    signature: Merci,<br/>l'équipe Peatio
+    please_contact: S'il ne s'agit pas de vous <a href='mailto:%{contact_mail}'>contactez-nous</a>.
+    footer: Ceci est un mail généré automatiquement, merci de ne pas y répondre, si vous avez des questions merci de contacter <a href="mailto:%{contact_mail}">contactez-nous</a>.
+  deposit_mailer:
+    accepted:
+      subject: "[Peatio] Votre dépôt a été crédité sur votre compte"
+      content: Votre dépôt de %{currency} a été crédité sur votre compte.
+  system_mailer:
+    daily_stats:
+      member_stats: Stats des Membres
+      signup: S'inscrire
+      activation: Activer
+      asset_stats: Porte-monnaie
+      trade_stats: Trades
+      asset_value_change_total: Porte-monnaies digitaux
+      trades_change_total: Total
+  withdraw_mailer:
+    submitted:
+      subject: "[Peatio] L'etat de votre retrait a été mis à jour"
+      content: Votre demande de retrait de %{currency} a biien été prise en compte, merci de patienter. Contactez-nous si vous avez des questions. 
+    processing:
+      subject: "[Peatio] L'etat de votre retrait a été mis à jour"
+      content: Votre demande de retrait de %{currency} est en cours. Merci de patienter. Contactez-nous si vous avez des questions.
+    done:
+      subject: "[Peatio] L'etat de votre retrait a été mis à jour"
+      content: Votre demande de retrait de %{currency} est terminée. Merci de vérifier. Contactez-nous si vous avez des questions.
+    withdraw_state:
+      subject: "[Peatio] L'etat de votre retrait a été mis à jour"
+      your_state: 'Your withdrawal state: '
+
+  'true': vrai
+  'false': faux
+  view_on_github: Voir sur Github
+  slogan:
+    heading: Peatio Open-Source Exchange
+    subheading: Cloud deployment simple et sécurisé
+    text1: Peatio - Cryptocurrency exchange for managing digital currency.
+    text2: Nous fournissons des installations de Peatio ainsi que des services en liens.
+  trade:
+    markets: Marchés
+    realtime_price:
+      title: Prix en temps réel
+    account_balance:
+      title: Balance
+  gon:
+    ask: Demande
+    bid: Offre
+    notification:
+      title: Peatio Exchange
+      enabled: Notifications activées.
+      new_trade: "%{kind} commande#%{id} executée le %{price} %{quote_unit} pour %{volume} %{base_unit}ã€‚"
+  back: Retour
+  invalid_password: Mot de passe non valide
+  all: Tout
+  date:
+    formats:
+      date-short: "%m-%d"
+      short: "%m-%d %H:%M"
+      default: "%m/%d/%Y %H:%M"
+  time:
+    formats:
+      date-short: "%m-%d"
+      short: "%m-%d %H:%M"
+      default: "%m/%d/%Y %H:%M"
+  header:
+    home: Home
+    dashboard: Tableau de bord
+    admin: Admin Panel
+    market: Trade
+    settings: Profil
+    signout: Sortir
+    funds: Fonds
+    getstart: Marchés
+    assets: Solvabilité
+    history: Historique
+    order_history: Historique de commandes
+    trade_history: Historique de trade
+    account_history: Historique du compte
+    my_profile: Mon profil
+    account_balance: Total
+    back: Retour
+    total: Total
+    deposit: Dépôt
+    withdraw: Retrait
+  admin_header:
+    deposits: Dépôts
+    withdraws: Retraits
+    statistics: Données statistiques
+  footer:
+    about: A propos
+    privacy: Privacy
+    contact: Nous contacter
+    price: Prix
+    liability_proof: Preuve
+  actions:
+    go: Aller
+    submit: Soumettre
+    deposit: Dépôt
+    select: Selectionner
+    unlock: Déverrouiller
+    confirm: Confirmer
+    back: Retour
+    block: voir dans le bloc
+    destroy: Effacer
+    destroy_confirm: Etes-vous sur de vouloir effacer?
+    detail: Details
+    publish: Publier
+    edit: Editer
+    preview: Prévisualiser
+    close: Fermer
+    cancel: Annuler
+    view: Voir
+    member: Membre
+    transact: Transité
+    reject: Rejeté
+    clipboard:
+      click: Cliquer pour copier
+      done: Copié
+  chart:
+    open: Ouvrir
+    high: Elevé
+    low: Faible
+    close: Fermer
+    price: Prix
+    volume: Volume
+    candlestick: 'Candlestick'
+    line: 'Ligne'
+    minute: minutes
+    hour: Heure
+    day: Jour
+    week: Semaine
+    month: Mois
+    year: Année
+    zoom: Zoom
+    ask: DEMANDE
+    bid: OFFRE
+    depth: Profondeur
+    depth_title: Profondeur de Marché
+  'yes': 'Oui'
+  'no': 'Non'
+  helpers:
+    action:
+      view: Voir
+      customer_service: nous contacter
+    submit:
+      order_ask:
+        create: DEMANDE
+      order_bid:
+        create: OFFRE
+      member:
+        update: Ouvrir un compte
+      fund_source:
+        create: Sauvegarer
+      deposit:
+        create: Dépôser
+      withdraw:
+        create: Créer
+  activations:
+    new:
+      login_required: Veuillez vous connecter
+  layouts:
+    admin:
+      menus:
+        sections:
+          members: Membres
+          deposits: Dépôts
+          sites_statistics: Analyses
+          operating: Operations
+        items:
+          operating:
+            proofs: Preuves
+            deposits: Dépôts
+            withdraws: Retraits
+          deposits:
+            currency: Dépôt
+    application:
+      close: Fermer
+  members:
+    edit:
+      name: Veuillez
+  sessions:
+    new:
+    create:
+      disabled: Votre compte a été désactivé, contactez les administrateurs en cas de problème.
+    failure:
+      account_locked: Trop de tentatives, pour assurer la sécurité de votre compte nous avons verrouillé votre compte. POur le déverrouiller veuillez réinitialiser votre mot de passe en cliquant sur "Mot de passe oublié" 
+      error: Mauvais identifiant, veuillez réessayer.
+  shared:
+    admin:
+      member:
+        member_info: Infos de membres
+        inactive: Inactif
+        deactive: Désactivé
+      account:
+        account_info: Infos de compte
+        payment_address: Adresse de dépôt
+    alert:
+      modern: Afin d'optimiser votre expérience veuillez télécharger un browser adapté, nous vous recommandons <a target='_blank' href='https://www.google.com/#q=google+chrome'>Google
+        Chrome</a>ã€‚
+      pusher_unavailable: La	 connexion est temporairement indisponible... <a
+        href='#' class='alert-link'>Veuillez rafraichir la page</a>.
+    header:
+      balance: Balance
+    header_account_balance:
+      locked: Verrouillé
+    market:
+      ticker:
+        ask_price: Demande
+        bid_price: Offre
+        high_price: Elevé
+        low_price: Faible
+        volume: Volume
+        latest_price: Derniers prix
+    frame:
+      deposit_now: Déposer maintenant
+  withdraw_channel:
+    bank:
+      key: Transfère bancaire
+      title: Transfère bancaire
+      intro: Retirer des fonds vers votre propre porte-monnaie
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    satoshi:
+      key: Blockchain
+      title: Bitcoin Blockchain
+      intro: Retirer des BTC vers votre propre porte-monnaie BTC
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    bitcoin_cash:
+      key: Blockchain
+      title: Bitcoin Cash Blockchain
+      intro: Retirer des BCH vers votre propre porte-monnaie BCH
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    litoshi:
+      key: Blockchain
+      title: Litoshi Blockchain
+      intro: Retirer des LTC vers votre propre porte-monnaie LTC
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    ripple:
+      key: Blockchain
+      title: Ripple Blockchain
+      intro: Retirer des XRP vers votre propre porte-monnaie XTP
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    duff:
+      key: Blockchain
+      title: Dash Blockchain
+      intro: Retirer des DASH vers votre propre porte-monnaie DASH
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+    ethereum:
+      key: Blockchain
+      title: Ethereum Blockchain
+      intro: Retirer des ETH vers votre propre porte-monnaie ETH
+      latency: 30 minutes
+      transfer: Manuel
+      go: Retirer
+  withdraws:
+    invalid_address: n'est pas valide. VOus ne pouvez retirer vers cette adresse
+  withdraws/bank:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/satoshi:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/bitcoin_cash:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/litoshi:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/duff:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
+  withdraws/ripple:
+    aasm_state:
+      submitting: Soumettre
+      submitted: Soumis
+      rejected: Rejeté
+      accepted: Accepté
+      suspect: Suspect
+      processing: En cours
+      done: Terminé
+      canceled: Annulé
+      failed: Echoué
