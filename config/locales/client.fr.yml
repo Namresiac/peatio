@@ -1,8 +1,8 @@
-en:
+fr:
   js:
     brand: Peatio
     submit: Soumettre
-    cancel: Ammuler
+    cancel: Annuler
     confirm: Confirmer
     fund_sources:
       manage_bank_account: Gestion de compte bancaire
